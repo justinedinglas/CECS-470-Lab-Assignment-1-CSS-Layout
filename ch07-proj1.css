@@ -121,3 +121,13 @@ header {
 }
 
 /* styles for tablet portrait and mobile landscape screens */
+@media (min-width: 481px) and (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+
+    :root {
+        --card-font-size: 100%;
+        --header-height: 5em;
+    }
+}
