@@ -55,11 +55,58 @@ button {
 }
 
 
-
 /* add your styles here */
 
+/* make header a flex container */
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+/* cards take 24% width (4 across) */
+.card{
+    width: 24%;
+}
 
+/* container flex + center */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cards row is flex + spread out + wrap */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* images never overflow card */
+.card img {
+    max-width: 100%;
+    display: block;
+}
+
+/* hover effects */
+.card img:hover {
+    filter: saturate(150%);
+}
+
+.card:hover {
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* button fade-in on card hover */
+.card button {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.card:hover button {
+    opacity: 1;
+}
 
 /* styles for mobile protrait screen */
 
